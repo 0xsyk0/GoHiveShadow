@@ -78,6 +78,7 @@ func CreateZipArchive(outputPath string) bool {
 	fmt.Println("[+] Cleanup")
 	os.Remove(samPath)
 	os.Remove(symPath)
+	os.Remove(secPath)
 	fmt.Println(fmt.Sprintf("[+] Archive available at path %s", archPath))
 	return true
 }
